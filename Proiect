@@ -6,15 +6,14 @@
 <body>
 <label for="name">Text:</label>
 <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
-<button type="button" onclick="check()">Adauga</button>
+<button type="button" onclick="check()">Add</button>
 <script>
 function check() {
-  let username = document.getElementById("searchTxt").value;
-  const dictionar = [ "apple", "orange", "banana", "grapes"];
-  if(dictionar.includes(username))
-    alert("Exista deja in dictionar");
+    const dictionar = ["apple", "orange", "banana", "grapes"];
+    if (dictionar.includes(document.getElementById("searchTxt").value))
+        alert("Exista deja in dictionar");
     else
-    alert("Nu exista in dictionar");
+        alert("Nu exista in dictionar");
 }
 </script>
 </body>
