@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+<body>
+<label for="name">Text:</label>
+<input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
+<button type="button" onclick="check()">Add</button>
+<script>
+function check() {
+    const dictionar = ["apple", "orange", "banana", "grapes"];
+    let word = document.getElementById("searchTxt").value;
+    if (dictionar.includes(word))
+        alert("Exista deja in dictionar");
+    else {
+        alert("Nu exista in dictionar");
+        dictionar.push(word);
+    }
+}
+</script>
+</body>
+</html>
